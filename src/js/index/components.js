@@ -9,6 +9,19 @@ function createNavElements() {
    contactButton.textContent = 'Contact us';
 
    navElement.append(homeButton, aboutButton, contactButton);
+
+   
+   homeButton .addEventListener('click', function() {
+   window.location.href = 'index.html';
+ });
+
+   aboutButton.addEventListener('click', function() {
+   window.location.href = 'about.html';
+ });
+
+   contactButton.addEventListener('click', function() {
+   window.location.href = 'contact.html';
+ });
    return;
 }
 
@@ -42,6 +55,7 @@ function createContentElement() {
    missionContainer.append(header3, missionPara);
 
    content.append(contentContainer, missionContainer);
+
 }
 
 export {createContentElement, createNavElements};

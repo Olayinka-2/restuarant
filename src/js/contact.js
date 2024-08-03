@@ -1,0 +1,2 @@
+import '../style/contact.css';
+

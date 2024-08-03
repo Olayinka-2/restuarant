@@ -1,0 +1,87 @@
+html {
+   font-size: 62.5%;
+}
+
+@font-face {
+   font-family: 'myFont';
+   src: url("../fonts/abel-regular-webfont.woff2");
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-size: 1.6rem;
+}
+
+body {
+   background-image: url('../images/background.jpg');
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.body-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100dvh;
+}
+
+.container {
+   flex-basis: min(500px, 80%);
+   background-color: #090B17;
+   opacity: .8;
+   display: flex;
+   flex-direction: column;
+   border-radius: 1rem;
+   padding: 3rem 2rem;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+.container h2 {
+   font-size: 3.4rem;
+   color: aliceblue;
+   font-family: 'myFont';
+   text-align: center;
+}
+
+.container div {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+   margin-bottom: 2rem;
+}
+
+.container label {
+   font-size: 2rem;
+   color: white;
+}
+
+.container input {
+   outline: none;
+   background: white;
+   border: none;
+   padding: 1rem;
+   width: 100%;
+}
+
+label span {
+   color: red;
+}
+
+.btn {
+   background: #FCFEFF;
+   padding: 1rem 2rem;
+   width: 30%;
+   align-self: center;
+}
+
+.btn:focus {
+   outline: none;
+}
