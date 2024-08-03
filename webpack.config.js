@@ -1,11 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { type } = require('os');
+// const { type } = require('os');
 
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/js/index.js',
+    index: './src/js/index/index.js',
     about: './src/js/about.js',
     contact: './src/js/contact.js'
   },
@@ -13,6 +13,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name][contenthash].js',
     clean: true,
+    assetModuleFilename: '[name][ext]'
   },
   devtool: 'source-map',
   module: {
