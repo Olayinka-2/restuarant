@@ -1,22 +1,22 @@
 function createNavElements() {
    let homeButton = document.createElement('button');
-   let aboutButton = document.createElement('button');
+   let menuButton = document.createElement('button');
    let contactButton = document.createElement('button');
    const navElement = document.querySelector('nav');
 
    homeButton.textContent = 'Home';
-   aboutButton.textContent = 'About us';
+   menuButton.textContent = 'Menu';
    contactButton.textContent = 'Contact us';
 
-   navElement.append(homeButton, aboutButton, contactButton);
+   navElement.append(homeButton, menuButton, contactButton);
 
    
    homeButton .addEventListener('click', function() {
    window.location.href = 'index.html';
  });
 
-   aboutButton.addEventListener('click', function() {
-   window.location.href = 'about.html';
+   menuButton.addEventListener('click', function() {
+   window.location.href = 'menu.html';
  });
 
    contactButton.addEventListener('click', function() {

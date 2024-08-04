@@ -1,1 +1,0 @@
-import '../style/about.css';

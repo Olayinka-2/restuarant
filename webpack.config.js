@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/js/index/index.js',
-    about: './src/js/about.js',
+    menu: './src/js/menu.js',
     contact: './src/js/contact.js'
   },
   output: {
@@ -42,10 +42,10 @@ module.exports = {
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
-      title: 'Restaurant - about',
-      filename: 'about.html',
-      template: 'src/page/about.html',
-      chunks: ['about']
+      title: 'Restaurant - menu',
+      filename: 'menu.html',
+      template: 'src/page/menu.html',
+      chunks: ['menu']
     }),
     new HtmlWebpackPlugin({
       title: 'Restaurant- contact',
