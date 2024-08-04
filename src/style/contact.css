@@ -71,8 +71,18 @@ form {
    width: 100%;
 }
 
-label span {
+span {
    color: red;
+}
+
+textarea {
+   height: 90px;
+   outline: none;
+   padding: 1rem;
+}
+
+textarea:focus {
+   outline: none;
 }
 
 .btn {

@@ -15,6 +15,12 @@ module.exports = {
     clean: true,
     assetModuleFilename: '[name][ext]'
   },
+  devServer: {
+    static: './dist', // Directory to serve static files from
+    port: 3000, // Port to listen on
+    open: true, // Open the browser automatically
+    hot: true // Enable Hot Module Replacement
+  },
   devtool: 'source-map',
   module: {
     rules: [
