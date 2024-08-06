@@ -30,9 +30,18 @@ module.exports = {
       }, 
       {
         test: /\.(png|svg|jpeg|gif|woff2)$/i,
-        type: 'asset/resource'
-      }
-    ]
+        type: 'asset/resource',
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+            },
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
