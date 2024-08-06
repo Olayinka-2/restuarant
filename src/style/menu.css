@@ -42,3 +42,36 @@ nav button {
    cursor: pointer;
    transition: 1s;
 }
+
+main {
+   display: flex;
+   justify-content: center;
+}
+#content-container {
+   background: rgba(25, 24, 12, .7);
+   width: 70%;
+   display: grid;
+   gap: 2rem;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.menu-card {
+   /* width: 200px; */
+   overflow: hidden;
+}
+
+.menu-card img {
+   width: 100%;
+   border-radius: 1rem 1rem 0rem 0;
+   object-fit: cover;
+   object-position: center;
+   
+}
+
+.menu-card div {
+   padding: 1rem;
+}
+
+.menu-card p {
+   color: #fff;
+   line-height: 1.5;
+}
